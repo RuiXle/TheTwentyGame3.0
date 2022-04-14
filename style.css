@@ -28,7 +28,7 @@
      position: relative;
      border-radius: 10px;
      border-color: rgb(255, 255, 255);
-     border-width: 2px;
+     border-width: 3.5px;
      transition-property: right, left;
     transition-duration: 2s;
     -webkit-transition-property: right, left; /* Safari */
@@ -36,11 +36,12 @@
     position: absolute;
    }
 
-   .btn:active {
-      left: 5px;
-      top: 10px;
-      transition: 5s;
-   }
+   .btn.onclick {
+      animation-duration: 3s;
+      transition-duration: 3s;
+      left: 0px;
+      top:0px;
+       }
 
    .words {
      color: white;
