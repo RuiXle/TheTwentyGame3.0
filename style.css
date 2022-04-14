@@ -36,19 +36,20 @@
     position: absolute;
    }
 
-   .btn.onclick {
-      animation-duration: 3s;
-      transition-duration: 3s;
-      left: 0px;
-      top:0px;
-       }
-
    .words {
      color: white;
      font-size: 1.4em;
      background-image: none;
      font-weight: bold;
    }
+
+  .btn:active{
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+
 
    .btn:before {
      content: "";

@@ -1,8 +1,11 @@
 function run() {
-    document.getElementById("b").style.left = "0px"
-    document.getElementById("b").style.top = "0px"
+    document.getElementById("b").style.transitionDuration = "1s";
+    //document.getElementById("b").style.left = "0px"
+    //document.getElementById("b").style.top = "0px"
+    //document.getElementById("b").style.width = "100%"
     // document.getElementById("b").style.transform = "translateX(0px)"
 // After
+}
 
 function getUserCard() {
     var randUserNum = Math.floor(Math.random() * 10) + 1
