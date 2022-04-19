@@ -4,17 +4,20 @@ function run() {
     //document.getElementById("b").style.top = "0px"
     //document.getElementById("b").style.width = "100%"
     // document.getElementById("b").style.transform = "translateX(0px)"
-// After
 }
+// After
 
 function getUserCard() {
     var randUserNum = Math.floor(Math.random() * 10) + 1
     var suitArray = ["C","D","H","S"]
     var randSuit = Math.floor(Math.random() * 4)
-    document.getElementById("cardUser").innerHTML = "<img src=images/" + randNum + suitArray[randSuit] + ".jpg>" 
-    return randUserNum
+    document.getElementById("card").insertAdjacentHTML("beforeend", "<img src=images/" + randUserNum + suitArray[randSuit] + ".jpg>" )
 } 
 
+function game(){
+	getUserCard();
+}
+/*
 function userFun() {
 	var userTotal = 0;
 	var stand = "y";
@@ -83,3 +86,4 @@ function game() {
 		retry = prompt(`Do you want to play again? Type "y" retry or "n" to stop`)
 	}while(retry == "y")
 }
+*/
