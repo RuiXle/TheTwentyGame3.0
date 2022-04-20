@@ -1,3 +1,4 @@
+var uCard = 0
 function run() {
     document.getElementById("b").style.transitionDuration = "1s";
     document.getElementById("b").style.left = "0px";
@@ -9,6 +10,8 @@ function run() {
 
 function getUserCard() {
     var randUserNum = Math.floor(Math.random() * 10) + 1
+	uCard = uCard + randUserNum
+	document.getElementById("UCounter").innerHTML = uCard 
     var suitArray = ["C","D","H","S"]
     var randSuit = Math.floor(Math.random() * 4)
     document.getElementById("card").insertAdjacentHTML("beforeend", "<img src=image/" + randUserNum + suitArray[randSuit] + ".jpg>" )
