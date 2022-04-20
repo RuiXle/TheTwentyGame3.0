@@ -19,7 +19,7 @@ function run() {
 
 	//stopdraw
 	document.getElementById("stop").style.top = "0px";
-	document.getElementById("stop").style.left = " 60px";
+	document.getElementById("stop").style.left = " 240px";
 	document.getElementById("stop").style.display = "block";
 }
 // After
