@@ -29,7 +29,7 @@
      border-radius: 10px;
      border-color: rgb(255, 255, 255);
      border-width: 3.5px;
-     transition-property: right, left;
+     transition-property: right, left, top, bottom;
     transition-duration: 2s;
     -webkit-transition-property: right, left; 
     -webkit-transition-duration: 2s; 
@@ -43,12 +43,17 @@
      font-weight: bold;
    }
 
-  .btn:active{
+/*.btn:active{
     width: 100%;
     top: 0;
     left: 0;
   }
+*/
 
+  #card > img {
+    height: 200px; 
+    width: 140px;
+  }
 
 
    .btn:before {
