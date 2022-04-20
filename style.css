@@ -70,6 +70,19 @@
 >>>>>>> b824d9faaecd44feca295a5b045ca6af4004494f
   }
 
+  #counter {
+    color: white;
+    display: none;
+
+  }
+
+  #stop {
+    color: white;
+    display: none;
+    
+  }
+
+
 
    .btn:before {
      content: "";
