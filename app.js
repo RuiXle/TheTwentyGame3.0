@@ -10,6 +10,17 @@ function run() {
 	document.getElementById("c").style.left = "0px"
 	document.getElementById("c").style.top = "0px"
 	document.getElementById("c").style.display = "block";
+
+
+	//counter 
+	document.getElementById("counter").style.top = "0px";
+	document.getElementById("counter").style.right = "0px"
+	document.getElementById("counter").style.display = "block";
+
+	//stopdraw
+	document.getElementById("stop").style.top = "0px";
+	document.getElementById("stop").style.left = " 60px";
+	document.getElementById("stop").style.display = "block";
 }
 // After
 
@@ -25,6 +36,7 @@ function getUserCard() {
 function game(){
 	getUserCard();
 }
+
 
 
 
