@@ -6,13 +6,12 @@ function run() {
     // document.getElementById("b").style.transform = "translateX(0px)"
 }
 // After
-}
 
 function getUserCard() {
     var randUserNum = Math.floor(Math.random() * 10) + 1
     var suitArray = ["C","D","H","S"]
     var randSuit = Math.floor(Math.random() * 4)
-    document.getElementById("card").insertAdjacentHTML("beforeend", "<img src=images/" + randUserNum + suitArray[randSuit] + ".jpg>" )
+    document.getElementById("card").insertAdjacentHTML("beforeend", "<img src=image/" + randUserNum + suitArray[randSuit] + ".jpg>" )
 } 
 
 function game(){

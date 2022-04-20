@@ -152,3 +152,6 @@
        background-position: 0 0;
      }
    }
+  h2 {
+    top: 50%;
+  }
