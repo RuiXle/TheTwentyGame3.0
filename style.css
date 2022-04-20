@@ -59,10 +59,15 @@
 */
 
   #card > img {
+<<<<<<< HEAD
     height: 200px; 
     width: 140px;
     padding-left: 5px;
     padding-right: 5px;
+=======
+    height: 180px; 
+    width: 120px;
+>>>>>>> b824d9faaecd44feca295a5b045ca6af4004494f
   }
 
 
