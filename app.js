@@ -1,9 +1,9 @@
 function run() {
     document.getElementById("b").style.transitionDuration = "1s";
-    document.getElementById("b").style.left = "0px"
-    document.getElementById("b").style.top = "0px"
-    document.getElementById("b").style.width = "100%"
-    document.getElementById("b").style.transform = "translateX(0px)"
+    document.getElementById("b").style.left = "0px";
+    document.getElementById("b").style.top = "0px";
+    document.getElementById("b").style.width = "100%";
+    document.getElementById("b").style.transform = "translateX(0px)";
 }
 // After
 
@@ -12,7 +12,6 @@ function getUserCard() {
     var suitArray = ["C","D","H","S"]
     var randSuit = Math.floor(Math.random() * 4)
     document.getElementById("card").insertAdjacentHTML("beforeend", "<img src=image/" + randUserNum + suitArray[randSuit] + ".jpg>" )
-	
 } 
 
 function game(){
