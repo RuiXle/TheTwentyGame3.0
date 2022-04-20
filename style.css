@@ -31,8 +31,8 @@
      border-width: 3.5px;
      transition-property: right, left;
     transition-duration: 2s;
-    -webkit-transition-property: right, left; /* Safari */
-    -webkit-transition-duration: 2s; /* Safari */
+    -webkit-transition-property: right, left; 
+    -webkit-transition-duration: 2s; 
     position: absolute;
    }
 
