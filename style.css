@@ -157,6 +157,12 @@
        background-position: 0 0;
      }
    }
-  h2 {
-    top: 50%;
+  .UserCounter {
+    background-color: white;
+    width: 240px;
+    height: 100px;
+  }
+  #UCounter {
+    color: turquoise;
+    font-size: 20px;
   }
