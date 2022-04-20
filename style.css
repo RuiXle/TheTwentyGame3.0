@@ -176,3 +176,7 @@
     color: turquoise;
     font-size: 20px;
   }
+  #card {
+    border-width: 5px;
+    border-color: turquoise;
+  }
