@@ -5,6 +5,11 @@ function run() {
     document.getElementById("b").style.top = "0px";
     document.getElementById("b").style.width = "100%";
     document.getElementById("b").style.transform = "translateX(0px)";
+
+	//botton C
+	document.getElementById("c").style.left = "0px"
+	document.getElementById("c").style.top = "0px"
+	document.getElementById("c").style.display = "block";
 }
 // After
 
@@ -20,6 +25,15 @@ function getUserCard() {
 function game(){
 	getUserCard();
 }
+
+
+
+
+
+
+
+
+
 /*
 function userFun() {
 	var userTotal = 0;
