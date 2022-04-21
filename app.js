@@ -10,6 +10,7 @@ function run() {
 	document.getElementById("c").style.left = "0px"
 	document.getElementById("c").style.top = "0px"
 	document.getElementById("c").style.display = "block";
+	document.getElementById("c").disabled = false;
 
 
 	//counter 
@@ -37,8 +38,13 @@ function game(){
 	getUserCard();
 }
 
+<<<<<<< HEAD
+function stopdraw() {
+	document.getElementById("stop").disabled=true;
+=======
 function btnDisable(){
 	game = null
+>>>>>>> 32c47bfdd87c2fd1efba1dba288178815b12c411
 }
 
 
