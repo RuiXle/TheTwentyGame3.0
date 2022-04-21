@@ -37,6 +37,9 @@ function game(){
 	getUserCard();
 }
 
+function btnDisable(){
+	game = null
+}
 
 
 
