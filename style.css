@@ -63,6 +63,7 @@
     width: 120px;
     padding-left: 5px;
     padding-right: 5px;
+    border-radius: 10px;
   }
 
   #counter {
@@ -192,4 +193,5 @@
   #card {
     border-width: 5px;
     border-color: turquoise;
+
   }
