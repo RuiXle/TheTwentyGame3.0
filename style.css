@@ -63,7 +63,11 @@
     width: 130x;
     padding-left: 5px;
     padding-right: 5px;
+<<<<<<< HEAD
     border-radius: 10% 10% 10% 10%;
+=======
+    border-radius: 10px;  
+>>>>>>> fff99efc5700c24ee0a0a30dbb6392e16eac1f3e
   }
 
   #counter {

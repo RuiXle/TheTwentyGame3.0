@@ -1,4 +1,5 @@
 var uCard = 0
+var cCard = 0
 function run() {
     document.getElementById("b").style.transitionDuration = "1s";
     document.getElementById("b").style.left = "0px";
@@ -24,21 +25,38 @@ function run() {
 	document.getElementById("stop").style.display = "block";
 }
 // After
+function suit(){
+	var suitArray = ["C","D","H","S"]
+    var randSuit = Math.floor(Math.random() * 4)
+	var suitResult = suitArray[randSuit]
+	return suitResult;
+}
 
 function getUserCard() {
     var randUserNum = Math.floor(Math.random() * 10) + 1
 	uCard = uCard + randUserNum
 	document.getElementById("UCounter").innerHTML = uCard 
-    var suitArray = ["C","D","H","S"]
-    var randSuit = Math.floor(Math.random() * 4)
-    document.getElementById("card").insertAdjacentHTML("beforeend", "<img src=image/" + randUserNum + suitArray[randSuit] + ".jpg>" )
+    document.getElementById("card").insertAdjacentHTML("beforeend", "<img src=image/" + randUserNum + suit() + ".jpg>" )
 } 
+
+function getCompCard() {
+	do {	
+		var randCompNum = Math.floor(Math.random() * 10) + 1
+		cCard = cCard + randCompNum
+		document.getElementById("").innerHTML = cCard
+		document.getElementById("").insertAdjacentHTML("beforeend", "<img src=image/" + randCompNum + suit() + ".jpg>" )
+	} while (cCard <= 15)
+}
 
 function game(){
 	getUserCard();
 }
 
+<<<<<<< HEAD
 function btnDisable() {
+=======
+function btnDisable(){
+>>>>>>> fff99efc5700c24ee0a0a30dbb6392e16eac1f3e
 	game = null
 }
 
