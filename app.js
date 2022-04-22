@@ -1,4 +1,5 @@
 var uCard = 0
+var cCard = 0
 function run() {
     document.getElementById("b").style.transitionDuration = "1s";
     document.getElementById("b").style.left = "0px";
@@ -39,10 +40,12 @@ function getUserCard() {
 } 
 
 function getCompCard() {
-	var randCompNum = Math.floor(Math.random() * 10) + 1
-	cCard = cCard + randCompNum
-	document.getElementById("").innerHTML = cCard
-	document.getElementById("").insertAdjacentHTML("beforeend", "<img src=image/" + randCompNum + suit() + ".jpg>" )
+	do {	
+		var randCompNum = Math.floor(Math.random() * 10) + 1
+		cCard = cCard + randCompNum
+		document.getElementById("").innerHTML = cCard
+		document.getElementById("").insertAdjacentHTML("beforeend", "<img src=image/" + randCompNum + suit() + ".jpg>" )
+	} while (cCard <= 15)
 }
 
 function game(){
