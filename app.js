@@ -38,13 +38,8 @@ function game(){
 	getUserCard();
 }
 
-<<<<<<< HEAD
-function stopdraw() {
-	document.getElementById("stop").disabled=true;
-=======
-function btnDisable(){
+function btnDisable() {
 	game = null
->>>>>>> 32c47bfdd87c2fd1efba1dba288178815b12c411
 }
 
 
