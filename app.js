@@ -14,10 +14,16 @@ function run() {
 	document.getElementById("c").disabled = false;
 
 
-	//counter 
+	//counter user
 	document.getElementById("counter").style.top = "0px";
 	document.getElementById("counter").style.right = "0px"
 	document.getElementById("counter").style.display = "block";
+
+	//counter computer
+	document.getElementById("counter2").style.top = "0px";
+	document.getElementById("counter2").style.right = "240px"
+	document.getElementById("counter2").style.display = "block";
+
 
 	//stopdraw
 	document.getElementById("stop").style.top = "0px";
@@ -43,21 +49,21 @@ function getCompCard() {
 	do {	
 		var randCompNum = Math.floor(Math.random() * 10) + 1
 		cCard = cCard + randCompNum
-		document.getElementById("").innerHTML = cCard
-		document.getElementById("").insertAdjacentHTML("beforeend", "<img src=image/" + randCompNum + suit() + ".jpg>" )
+		console.log(cCard)
+		document.getElementById("CCounter").innerHTML = cCard
+		document.getElementById("compCard").insertAdjacentHTML("beforeend", "<img src=image/" + randCompNum + suit() + ".jpg>" )
 	} while (cCard <= 15)
 }
 
-function game(){
+function UserTurn(){
 	getUserCard();
 }
+function CompTurn(){
+	getCompCard();
+}
 
-<<<<<<< HEAD
 function btnDisable() {
-=======
-function btnDisable(){
->>>>>>> fff99efc5700c24ee0a0a30dbb6392e16eac1f3e
-	game = null
+	UserTurn = null
 }
 
 
