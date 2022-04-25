@@ -13,15 +13,27 @@ function run() {
 	document.getElementById("c").disabled = false;
 
 
-	//counter 
+	//counter user
 	document.getElementById("counter").style.top = "0px";
 	document.getElementById("counter").style.right = "0px"
 	document.getElementById("counter").style.display = "block";
+
+	//counter computer
+	document.getElementById("counter2").style.top = "0px";
+	document.getElementById("counter2").style.right = "240px"
+	document.getElementById("counter2").style.display = "block";
+
 
 	//stopdraw
 	document.getElementById("stop").style.top = "0px";
 	document.getElementById("stop").style.left = " 240px";
 	document.getElementById("stop").style.display = "block";
+
+	//Bottom Textbox
+	document.getElementById("bt").style.bottom = "0px"
+	document.getElementById("bt").style.left = "0px"
+	document.getElementById("bt").style.width = "100%"
+	document.getElementById("bt").style.display = "block";
 }
 // After
 
@@ -34,12 +46,25 @@ function getUserCard() {
     document.getElementById("card").insertAdjacentHTML("beforeend", "<img src=image/" + randUserNum + suitArray[randSuit] + ".jpg>" )
 } 
 
-function game(){
+function getCompCard() {
+	do {	
+		var randCompNum = Math.floor(Math.random() * 10) + 1
+		cCard = cCard + randCompNum
+		console.log(cCard)
+		document.getElementById("CCounter").innerHTML = cCard
+		document.getElementById("compCard").insertAdjacentHTML("beforeend", "<img src=image/" + randCompNum + suit() + ".jpg>" )
+	} while (cCard <= 15)
+}
+
+function UserTurn(){
 	getUserCard();
+}
+function CompTurn(){
+	getCompCard();
 }
 
 function btnDisable() {
-	game = null
+	UserTurn = null
 }
 
 

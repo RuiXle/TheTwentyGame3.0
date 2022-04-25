@@ -33,23 +33,35 @@
           </button>
     <div id="card">
         <button class="btn" id="c">
-            <h3 onclick="game()">Draw a card</h3>
+            <h3 onclick="UserTurn()">Draw a card</h3>
         </button>
         
     <button class="btn" id="stop">
-        
-        <h3 onclick="btnDisable()">Stop the draw</h3>
-
+        <h3 onclick="btnDisable(), CompTurn()">Stop the draw</h3>
     </button>
+    
+    
+    </div>
     <div id="compCard">
 
     </div>
 
-    </div>
+    <button class="btn" id="counter2">
+        <p>  Computer Counter  </p>
+        <p id = "CCounter"> 0 </p>
+    </button>
+
+
+
     <button class="btn" id="counter">
+        <p> Player Counter </p>
         <p id = "UCounter"> 0 </p>
     </button>
 
+
+    <button class="btn" id="bt">
+        <p>??!!!!!</p>
+    </button>
     </div>
     
    
