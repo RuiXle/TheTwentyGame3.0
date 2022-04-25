@@ -34,13 +34,20 @@ function run() {
 	document.getElementById("stop").style.top = "0px";
 	document.getElementById("stop").style.left = " 240px";
 	document.getElementById("stop").style.display = "block";
+
+	//Bottom Textbox
+	document.getElementById("bt").style.bottom = "0px"
+	document.getElementById("bt").style.left = "0px"
+	document.getElementById("bt").style.width = "100%"
+	document.getElementById("bt").style.display = "block";
 }
 // After
+
 function suit(){
 	var suitArray = ["C","D","H","S"]
     var randSuit = Math.floor(Math.random() * 4)
-	var suitResult = suitArray[randSuit]
-	return suitResult;
+	var type = suitArray[randSuit]
+	return type
 }
 
 function getUserCard() {
@@ -65,8 +72,8 @@ function UserTurn(){
 }
 function CompTurn(){
 	getCompCard();
-	compNum();
-
+	compNum(cCard, uCard);
+	getCompCard = null
 }
 
 function btnDisable() {
@@ -75,26 +82,30 @@ function btnDisable() {
 
 function compNum(cCard, uCard) {
     if (uCard == cCard){
-		alert(`You have ${uCard} and the computer has ${cCard}. The round is tied No-one wins!`);
+		document.getElementById("bt").innerHTML = `You have ${uCard} and the computer has ${cCard}. The round is tied No-one wins!`;
 		
 	}
 	if (uCard > 20){
-		alert(`You went over with ${uCard}`);
+		document.getElementById("bt").innerHTML = `You went over with ${uCard}`;
 		compwin = "y"
 		userwin = "n"
 	}
 	if (cCard > 20){
-		alert(`The computer went over with ${cCard}`);
+		document.getElementById("bt").innerHTML = `The computer went over with ${cCard}`;
 		userwin = "y"
 		compwin = "n"
 	}
+	if ((uCard >= 20) && (cCard >= 20)){
+		document.getElementById("bt").innerHTML = `You have ${uCard} and the computer has ${cCard}. You both went over! The round is tied No-one wins!`;
+		
+	}
 	if ((uCard > cCard) && (uCard <= 20)){
-		alert(`You win! You had ${uCard} and the computer had ${cCard}`)
+		document.getElementById("bt").innerHTML = `You win! You had ${uCard} and the computer had ${cCard}`;
 		userwin = "y"
 		compwin = "n"
 	}
 	if ((cCard > uCard) && (cCard <= 20)){
-		alert(`Sorry the computer won with ${cCard}, and You lost with ${uCard}`)
+		document.getElementById("bt").innerHTML = `Sorry the computer won with ${cCard}, and You lost with ${uCard}`;
 		compwin = "y"
 		userwin = "n"
 	}
